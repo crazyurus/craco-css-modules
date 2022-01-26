@@ -1,0 +1,28 @@
+{
+  "name": "craco-css-modules",
+  "version": "1.0.0",
+  "description": "A craco plugin to automatically use css modules",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyurus/craco-css-modules.git"
+  },
+  "keywords": [
+    "craco",
+    "create-react-app",
+    "css-modules"
+  ],
+  "author": "Crazy Urus <crazyurus@vip.qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crazyurus/craco-css-modules/issues"
+  },
+  "homepage": "https://github.com/crazyurus/craco-css-modules",
+  "dependencies": {
+    "@umijs/babel-plugin-auto-css-modules": "^3.5.20"
+  },
+  "peerDependencies": {
+    "@craco/craco": "^6.4.3",
+    "react-scripts": "^5.0.0"
+  }
+}
