@@ -20,20 +20,24 @@ function overrideWebpackConfig({ context, webpackConfig }) {
     );
   }
 
-  const lessRule = oneOfRule.oneOf.find(rule => rule.test.toString() === '/\\.less$/');
-  const lessModuleRule = oneOfRule.oneOf.find(rule => rule.test.toString() === '/\\.module\\.less$/');
+  const extensions = ['css', 'less', '(scss|sass)'];
 
-  lessRule.oneOf = [
-    {
-      resourceQuery: /modules/,
-      use: lessModuleRule.use,
-    },
-    {
-      use: lessRule.use,
-    }
-  ];
+  extensions.forEach(extension => {
+    const styleRule = oneOfRule.oneOf.find(rule => rule.test.toString() === `/\\.${extension}$/`);
+    const styleModuleRule = oneOfRule.oneOf.find(rule => rule.test.toString() === `/\\.module\\.${extension}$/`);
 
-  delete lessRule.use;
+    styleRule.oneOf = [
+      {
+        resourceQuery: /modules/,
+        use: styleModuleRule.use,
+      },
+      {
+        use: styleRule.use,
+      }
+    ];
+
+    delete styleRule.use;
+  });
 
   return webpackConfig;
 }
