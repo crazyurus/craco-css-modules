@@ -1,6 +1,6 @@
 {
   "name": "craco-css-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A craco plugin to automatically use css modules",
   "main": "index.js",
   "repository": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/crazyurus/craco-css-modules",
   "dependencies": {
-    "@umijs/babel-plugin-auto-css-modules": "^3.5.20"
+    "auto-css-modules-webpack-plugin": "^1.1.1"
   },
   "peerDependencies": {
     "@craco/craco": "^6.4.3",

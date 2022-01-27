@@ -1,4 +1,5 @@
 const { throwUnexpectedConfigError } = require('@craco/craco');
+const AutoCSSModulesWebpackPlugin = require('auto-css-modules-webpack-plugin');
 
 function throwError(message, githubIssueQuery) {
   return throwUnexpectedConfigError({
@@ -39,24 +40,11 @@ function overrideWebpackConfig({ context, webpackConfig }) {
     delete styleRule.use;
   });
 
+  webpackConfig.plugins.push(new AutoCSSModulesWebpackPlugin());
+
   return webpackConfig;
-}
-
-function overrideCracoConfig({ cracoConfig }) {
-  if (!cracoConfig.babel) {
-    cracoConfig.babel = {};
-  }
-
-  if (!Array.isArray(cracoConfig.babel.plugins)) {
-    cracoConfig.babel.plugins = [];
-  }
-
-  cracoConfig.babel.plugins.push('@umijs/babel-plugin-auto-css-modules');
-
-  return cracoConfig;
 }
 
 module.exports = {
   overrideWebpackConfig,
-  overrideCracoConfig,
 };
