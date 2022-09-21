@@ -22,7 +22,8 @@
     "auto-css-modules-webpack-plugin": "^1.1.1"
   },
   "peerDependencies": {
-    "@craco/craco": "^6.4.3",
+    "@craco/craco": "^6.4.5",
     "react-scripts": "^5.0.0"
-  }
+  },
+  "packageManager": "pnpm@7.12.1"
 }

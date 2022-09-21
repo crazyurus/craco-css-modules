@@ -1,6 +1,8 @@
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 # Craco CSS Modules Plugin
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![npm dependents](https://badgen.net/npm/dependents/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules?activeTab=dependents)
+[![npm downloads](https://badgen.net/npm/dt/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules)
 
 This is a [craco](https://github.com/gsoft-inc/craco) plugin that adds CSS Modules support to [create-react-app](https://facebook.github.io/create-react-app/).
 

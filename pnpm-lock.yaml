@@ -1,0 +1,26 @@
+lockfileVersion: 5.4
+
+specifiers:
+  auto-css-modules-webpack-plugin: ^1.1.1
+
+dependencies:
+  auto-css-modules-webpack-plugin: 1.1.1
+
+packages:
+
+  /acorn-walk/8.2.0:
+    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
+    engines: {node: '>=0.4.0'}
+    dev: false
+
+  /auto-css-modules-webpack-plugin/1.1.1:
+    resolution: {integrity: sha512-Jm4Z2xlaxAO/eHO+ysMqr1fPEdBdfVnP18Y5KjQT43sq244iiKwYflYMIdifugF6NTpFKD0nzUjARlJ1esMeVQ==}
+    engines: {node: '>=10.13.0'}
+    peerDependencies:
+      webpack: ^4.46.0 || ^5.20.0
+    peerDependenciesMeta:
+      webpack:
+        optional: true
+    dependencies:
+      acorn-walk: 8.2.0
+    dev: false
