@@ -1,5 +1,6 @@
 # Craco CSS Modules Plugin
 
+![publish](https://github.com/crazyurus/craco-css-modules/actions/workflows/publish.yaml/badge.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://badgen.net/npm/v/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules)
 [![npm dependents](https://badgen.net/npm/dependents/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules?activeTab=dependents)
