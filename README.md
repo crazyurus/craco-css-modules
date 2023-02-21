@@ -6,7 +6,7 @@
 [![npm dependents](https://badgen.net/npm/dependents/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules?activeTab=dependents)
 [![npm downloads](https://badgen.net/npm/dt/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules)
 
-This is a [craco](https://github.com/gsoft-inc/craco) plugin that adds CSS Modules support to [create-react-app](https://facebook.github.io/create-react-app/).
+This is a [craco](https://craco.js.org) plugin that adds CSS Modules support to [create-react-app](https://facebook.github.io/create-react-app/).
 
 ## Introduction
 
@@ -34,11 +34,11 @@ import './index.less';
 `craco-css-modules` is tested with:
 
 - **react-scripts**: `^5.0.0`
-- **@craco/craco**: `^6.4.0`
+- **@craco/craco**: `6.4.0` and above, `7.0.0`
 
 ## Installation
 
-First, follow the [`craco` Installation Instructions](https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md##installation) to install the `craco` package, create a `craco.config.js` file, and modify the scripts in your `package.json`.
+First, follow the [`craco` Installation Instructions](https://github.com/dilanx/craco/blob/master/packages/craco/README.md) to install the `craco` package, create a `craco.config.js` file, and modify the scripts in your `package.json`.
 
 Then install `craco-css-modules`:
 
