@@ -1,6 +1,6 @@
 {
   "name": "craco-css-modules",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A craco plugin to automatically use css modules",
   "main": "index.js",
   "repository": {

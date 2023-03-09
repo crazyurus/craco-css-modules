@@ -10,23 +10,24 @@ This is a [craco](https://craco.js.org) plugin that adds CSS Modules support to 
 
 ## Introduction
 
-When you use `craco-css-modules`, you no longer need to add the module suffix to less file names. For example:
+When you use `craco-css-modules`, you no longer need to add the module suffix to `css` `less` or
+`scss` file names. For example:
 ```js
 // Before
-import styles from './index.module.less';
+import styles from './index.module.scss';
 
 // After
-import styles from './index.less';
+import styles from './index.scss';
 ```
 
 We judge whether we should use CSS Modules based on how the less file is imported.
 
 ```js
 // use CSS Modules
-import styles from './index.less';
+import styles from './index.scss';
 
 // do not use CSS Modules
-import './index.less';
+import './index.scss';
 ```
 
 ## Supported Versions
@@ -35,6 +36,10 @@ import './index.less';
 
 - **react-scripts**: `^5.0.0`
 - **@craco/craco**: `6.4.0` and above, `7.0.0`
+
+And you can also use with follow plugins:
+
+- **craco-less**: `^2.0.0`
 
 ## Installation
 
@@ -61,6 +66,10 @@ module.exports = {
   plugins: [{ plugin: CracoCSSModules }],
 };
 ```
+
+## Example
+
+Here is a complete example [create-react-app-with-craco](https://github.com/crazyurus/create-react-app). You can directly use this template.
 
 ## License
 

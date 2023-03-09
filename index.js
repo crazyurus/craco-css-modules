@@ -24,8 +24,12 @@ function overrideWebpackConfig({ context, webpackConfig }) {
   const extensions = ['css', 'less', '(scss|sass)'];
 
   extensions.forEach(extension => {
-    const styleRule = oneOfRule.oneOf.find(rule => rule.test.toString() === `/\\.${extension}$/`);
-    const styleModuleRule = oneOfRule.oneOf.find(rule => rule.test.toString() === `/\\.module\\.${extension}$/`);
+    const styleRule = oneOfRule.oneOf.find(rule => rule.test && rule.test.toString() === `/\\.${extension}$/`);
+    const styleModuleRule = oneOfRule.oneOf.find(rule => rule.test && rule.test.toString() === `/\\.module\\.${extension}$/`);
+
+    if (!styleRule) {
+      return;
+    }
 
     styleRule.oneOf = [
       {
