@@ -1,5 +1,6 @@
 # Craco CSS Modules Plugin
 
+![test](https://github.com/crazyurus/craco-css-modules/actions/workflows/test.yaml/badge.svg)
 ![publish](https://github.com/crazyurus/craco-css-modules/actions/workflows/publish.yaml/badge.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![npm](https://badgen.net/npm/v/craco-css-modules)](https://www.npmjs.com/package/craco-css-modules)
@@ -63,7 +64,9 @@ Here is a complete `craco.config.js` configuration file that adds CSS Modules ru
 const CracoCSSModules = require('craco-css-modules');
 
 module.exports = {
-  plugins: [{ plugin: CracoCSSModules }],
+  plugins: [
+    { plugin: CracoCSSModules }
+  ],
 };
 ```
 

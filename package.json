@@ -2,7 +2,7 @@
   "name": "craco-css-modules",
   "version": "1.0.4",
   "description": "A craco plugin to automatically use css modules",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crazyurus/craco-css-modules.git"
@@ -18,15 +18,24 @@
     "url": "https://github.com/crazyurus/craco-css-modules/issues"
   },
   "homepage": "https://github.com/crazyurus/craco-css-modules",
+  "scripts": {
+    "test": "jest --coverage"
+  },
   "dependencies": {
     "auto-css-modules-webpack-plugin": "^1.1.1"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "@craco/craco": "^7.0.0",
-    "react-scripts": "^5.0.0"
+    "craco-less": "^2.0.0",
+    "jest": "^29.5.0",
+    "react-scripts": "^5.0.1"
+  },
+  "peerDependencies": {
+    "@craco/craco": ">=6.0.0",
+    "react-scripts": ">=4.0.0"
   },
   "files": [
-    "index.js"
+    "lib/index.js"
   ],
-  "packageManager": "pnpm@7.22.0"
+  "packageManager": "pnpm@7.29.0"
 }
