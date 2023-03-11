@@ -1,8 +1,7 @@
 name: Publish
 on:
   release:
-    types:
-      - created
+    types: [published]
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -12,7 +11,6 @@ jobs:
       with:
         node-version: '16.x'
         registry-url: 'https://registry.npmjs.org'
-        always-auth: true
     - name: Publish
       run: npm publish
       env:

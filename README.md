@@ -11,8 +11,7 @@ This is a [craco](https://craco.js.org) plugin that adds CSS Modules support to 
 
 ## Introduction
 
-When you use `craco-css-modules`, you no longer need to add the module suffix to `css` `less` or
-`scss` file names. For example:
+When you use `craco-css-modules`, you no longer need to add the module suffix to `css` `less` or `scss` file names. For example:
 ```js
 // Before
 import styles from './index.module.scss';
@@ -49,11 +48,15 @@ First, follow the [`craco` Installation Instructions](https://github.com/dilanx/
 Then install `craco-css-modules`:
 
 ```bash
+$ npm install --dev craco-css-modules
+
+# OR
+
 $ yarn add --dev craco-css-modules
 
 # OR
 
-$ npm install --dev craco-css-modules
+$ pnpm install --dev craco-css-modules
 ```
 
 ## Usage
@@ -65,6 +68,20 @@ const CracoCSSModules = require('craco-css-modules');
 
 module.exports = {
   plugins: [
+    { plugin: CracoCSSModules }
+  ],
+};
+```
+
+If you are using `less`, you can also use the plugin `craco-less`:
+
+```js
+const CracoLess = require('craco-less');
+const CracoCSSModules = require('craco-css-modules');
+
+module.exports = {
+  plugins: [
+    { plugin: CracoLess },
     { plugin: CracoCSSModules }
   ],
 };
