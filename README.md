@@ -39,7 +39,7 @@ import './index.scss';
 
 And you can also use with follow plugins:
 
-- **craco-less**: `^2.0.0`
+- **craco-less**: `^3.0.0`
 
 ## Installation
 
